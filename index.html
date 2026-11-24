@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="Bilal Vekariya — AI Engineering student and creator of AI Study Assistant.">
+  <title>Bilal Vekariya — AI Study Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#11100f;--panel:#191817;--panel2:#211f1d;--ink:#f4f0e9;--muted:#aaa39a;--line:#38332e;--accent:#ff6b3d;--accent2:#ffc078;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.tag,.nav a,.index{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.eyebrow{font-size:11px;color:var(--accent);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:22px;height:1px;background:var(--accent)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Space Grotesk",sans-serif;letter-spacing:-.045em}h1{font-size:clamp(3.5rem,9vw,7.6rem);line-height:.91;margin:25px 0 26px;max-width:900px}h2{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.02;margin:15px 0 20px}h3{font-size:1.4rem}.accent{color:var(--accent)}.muted{color:var(--muted)}.topbar{position:sticky;top:0;z-index:10;background:rgba(17,16,15,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;font-size:17px;letter-spacing:-.04em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:26px;align-items:center}.nav a{font-size:10px;color:#d0c9c0;transition:.2s}.nav a:hover{color:var(--accent)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 11px;border-radius:4px}.hero{min-height:690px;display:grid;align-items:center;padding:100px 0 90px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:580px;height:580px;border:1px solid rgba(255,107,61,.17);border-radius:50%;right:-160px;top:80px;box-shadow:0 0 0 55px rgba(255,107,61,.025),0 0 0 110px rgba(255,107,61,.018);pointer-events:none}.hero-inner{position:relative;z-index:1}.hero h1 em{font-style:normal;color:var(--accent)}.hero-sub{font-size:clamp(17px,2vw,21px);max-width:560px;color:#c2bbb2}.hero-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}.btn{display:inline-flex;align-items:center;gap:12px;padding:14px 19px;border:1px solid var(--accent);background:var(--accent);color:#1b100c;font-weight:700;font-size:13px;transition:.2s}.btn:hover{transform:translateY(-3px);background:#ff855f}.btn.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.btn.secondary:hover{border-color:var(--accent);color:var(--accent)}.hero-foot{margin-top:78px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font:10px "DM Mono";text-transform:uppercase;letter-spacing:.09em}.section{padding:105px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:end;margin-bottom:54px}.section-head p{max-width:490px;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.about-card,.project-card,.feature,.step,.contact-card{background:var(--panel);border:1px solid var(--line);padding:28px}.about-card p{color:var(--muted)}.statline{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}.stat{border-top:1px solid var(--line);padding-top:13px}.stat strong{display:block;font:600 24px "Space Grotesk";color:var(--accent)}.stat span{font:10px "DM Mono";color:var(--muted);text-transform:uppercase}.project-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:36px;align-items:center}.project-art{min-height:320px;background:radial-gradient(circle at 70% 20%,rgba(255,107,61,.23),transparent 35%),linear-gradient(145deg,#29231f,#151413);border:1px solid #494038;display:flex;align-items:center;justify-content:center;padding:25px;position:relative;overflow:hidden}.mock-window{width:100%;max-width:390px;background:#111;border:1px solid #51463d;box-shadow:0 25px 60px #0008;transform:rotate(-2deg)}.mock-top{height:28px;border-bottom:1px solid #39332e;display:flex;align-items:center;gap:5px;padding:0 10px}.dot{width:6px;height:6px;border-radius:50%;background:#71645a}.mock-body{padding:18px}.mock-label{font:9px "DM Mono";color:var(--accent);letter-spacing:.1em}.mock-title{font:600 21px "Space Grotesk";margin:8px 0 15px}.mock-row{height:8px;background:#39332e;margin:9px 0;border-radius:10px}.mock-row.short{width:62%}.mock-chip{display:inline-block;padding:6px 9px;border:1px solid #614432;color:#ffc078;font:9px "DM Mono";margin:6px 4px 0 0}.project-copy p{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:23px 0}.tag{font-size:9px;padding:7px 9px;border:1px solid var(--line);color:#d6cfc6}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature .index{color:var(--accent);font-size:11px}.feature h3{margin:22px 0 8px}.feature p{color:var(--muted);font-size:14px;margin:0}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{min-height:185px}.step .index{color:var(--accent)}.step h3{margin:22px 0 8px}.step p{font-size:13px;color:var(--muted);margin:0}.tool-row{display:flex;flex-wrap:wrap;gap:10px}.tool{padding:14px 18px;border:1px solid var(--line);background:var(--panel);font:11px "DM Mono";color:#ddd4ca}.evidence{display:grid;grid-template-columns:1fr 1fr;gap:14px}.evidence-box{padding:30px;border:1px dashed #665143;background:#171513}.evidence-box p{color:var(--muted);font-size:14px}.evidence-box strong{color:var(--accent)}.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:25px}.contact-card p{color:var(--muted)}.contact-links{display:flex;flex-direction:column;gap:12px}.contact-links a{padding:15px 0;border-bottom:1px solid var(--line);font:11px "DM Mono";text-transform:uppercase;display:flex;justify-content:space-between}.contact-links a:hover{color:var(--accent)}footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font:10px "DM Mono";display:flex;justify-content:space-between;gap:15px}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}.note{font-size:11px;color:#958b80;margin-top:20px}
+    @media(max-width:800px){.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#171513;padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero{min-height:620px}.section-head,.project-card,.contact{grid-template-columns:1fr;gap:20px}.feature-grid{grid-template-columns:1fr 1fr}.workflow{grid-template-columns:1fr 1fr}.project-card{padding:22px}.project-art{min-height:260px}}
+    @media(max-width:520px){.wrap{width:min(100% - 32px,var(--max))}.hero{padding:85px 0 65px}.hero-foot{flex-direction:column;margin-top:55px}.section{padding:76px 0}.about-grid,.feature-grid,.workflow,.evidence{grid-template-columns:1fr}.statline{gap:7px}.stat strong{font-size:20px}.about-card,.feature,.step{padding:22px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home">BILAL<span>.</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">THE HUMAN</a><a href="#project">PROJECT</a><a href="#process">PROCESS</a><a href="#toolkit">TOOLKIT</a><a href="#contact">CONNECT ↗</a>
+    </nav>
+    <button class="menu" id="menu" aria-label="Toggle navigation">MENU +</button>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">AI ENGINEERING · STUDENT PORTFOLIO</div>
+      <h1>I TURN<br>QUESTIONS INTO<br><em>CREATION.</em></h1>
+      <p class="hero-sub">I’m Bilal Vekariya, an AI Engineering student exploring how technology can make learning more approachable. This is a look at my work, ideas and current learning journey.</p>
+      <div class="hero-meta">
+        <a class="btn" href="#project">EXPLORE MY PROJECT <span>↘</span></a>
+        <a class="btn secondary" href="https://github.com/bilalvek11-prog/ai-study-assistant" target="_blank" rel="noreferrer">VIEW SOURCE ↗</a>
+      </div>
+      <div class="hero-foot"><span>01 / FROM CURIOSITY TO CREATION</span><span>KARNAVATI UNIVERSITY · INDIA</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">01 / THE HUMAN</div><h2>Learning by<br><span class="accent">making.</span></h2></div><p>I’m a first-semester AI Engineering student at Karnavati University. I’m building my foundations in programming and artificial intelligence through coursework, experiments and practical projects.</p></div>
+      <div class="about-grid">
+        <article class="about-card reveal"><div class="eyebrow">A LITTLE ABOUT ME</div><h3>Curious by default.<br>Always in progress.</h3><p>I enjoy exploring how software and AI can solve everyday problems. My approach is simple: understand an idea, build a small version, test it and learn from the result.</p><p class="muted">This portfolio presents my current learning and one of my practical projects.</p></article>
+        <article class="about-card reveal"><div class="eyebrow">EDUCATION</div><h3>Building the foundations.</h3><p><strong>AI Engineering</strong><br>Karnavati University<br>First Semester</p><div class="statline"><div class="stat"><strong>01</strong><span>Semester</span></div><div class="stat"><strong>AI</strong><span>Study focus</span></div><div class="stat"><strong>∞</strong><span>Curiosity</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="project">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">02 / SELECTED WORK</div><h2>One idea.<br><span class="accent">A study companion.</span></h2></div><p>My 10-A mini project explores an AI-based study assistant. The 10-B portfolio documents the project, its purpose and the learning behind its development.</p></div>
+      <article class="project-card reveal">
+        <div class="project-art" aria-label="Illustrative study assistant interface concept">
+          <div class="mock-window"><div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="mock-body"><div class="mock-label">AI STUDY ASSISTANT / STUDY SPACE</div><div class="mock-title">Make learning<br>feel more clear.</div><div class="mock-row"></div><div class="mock-row short"></div><span class="mock-chip">ASK</span><span class="mock-chip">LEARN</span><span class="mock-chip">REVISE</span><div class="mock-row"></div><div class="mock-row short"></div></div></div>
+        </div>
+        <div class="project-copy"><div class="eyebrow">MINI PROJECT 01 · 10-A</div><h2>AI Study<br>Assistant</h2><p>An AI-based learning project created to explore how an intelligent assistant can support students during study and revision. The project is presented here as a case study of its objective, development and outcome.</p><div class="tags"><span class="tag">ARTIFICIAL INTELLIGENCE</span><span class="tag">EDUCATION</span><span class="tag">WEB PROJECT</span></div><div class="hero-meta"><a class="btn" href="https://bilalvek11-prog.github.io/ai-study-assistant/" target="_blank" rel="noreferrer">OPEN LIVE PROJECT ↗</a><a class="btn secondary" href="https://github.com/bilalvek11-prog/ai-study-assistant" target="_blank" rel="noreferrer">GITHUB REPOSITORY ↗</a></div></div>
+      </article>
+      <p class="note">The interface artwork above is an illustrative portfolio graphic, not a screenshot of the application. Replace it with your own app screenshots before final submission.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">03 / PROJECT OVERVIEW</div><h2>What the project<br><span class="accent">sets out to do.</span></h2></div><p>Use this section to explain the purpose of your 10-A application in a clear, student-friendly way.</p></div>
+      <div class="feature-grid">
+        <article class="feature reveal"><div class="index">01 / THE NEED</div><h3>Study support</h3><p>Students often need a convenient way to explore topics and get help while learning independently.</p></article>
+        <article class="feature reveal"><div class="index">02 / THE IDEA</div><h3>AI assistance</h3><p>Explore how AI can respond to student input and make learning support more accessible.</p></article>
+        <article class="feature reveal"><div class="index">03 / THE GOAL</div><h3>Clearer learning</h3><p>Build and evaluate a practical application that demonstrates an AI-based approach to a learning need.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">04 / HOW I APPROACHED IT</div><h2>From idea<br>to <span class="accent">outcome.</span></h2></div><p>A simple project-development sequence that can be explained during your practical presentation.</p></div>
+      <div class="workflow">
+        <article class="step reveal"><div class="index">STEP 01</div><h3>Understand</h3><p>Identify the study-related problem and define the objective of the application.</p></article>
+        <article class="step reveal"><div class="index">STEP 02</div><h3>Develop</h3><p>Build the application using the tools and services included in the actual 10-A project.</p></article>
+        <article class="step reveal"><div class="index">STEP 03</div><h3>Test</h3><p>Try representative inputs, observe the responses and record issues or improvements.</p></article>
+        <article class="step reveal"><div class="index">STEP 04</div><h3>Present</h3><p>Document the process, show real screenshots and explain the final outcome.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="toolkit">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">05 / CURRENT TOOLKIT</div><h2>Tools I’m<br><span class="accent">learning with.</span></h2></div><p>A snapshot of my current interests and skills. The exact technologies used in the AI Study Assistant should be listed from the project source code.</p></div>
+      <div class="tool-row reveal"><span class="tool">C PROGRAMMING</span><span class="tool">ARTIFICIAL INTELLIGENCE</span><span class="tool">ARDUINO</span><span class="tool">WEB DEVELOPMENT</span><span class="tool">PROBLEM SOLVING</span></div>
+      <p class="note">Before submission, update this list to distinguish technologies actually used in the project from subjects you are currently learning.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">06 / PROJECT EVIDENCE</div><h2>Show the<br><span class="accent">real work.</span></h2></div><p>Add evidence from your working application and your own testing. These are useful for both the digital portfolio and your presentation.</p></div>
+      <div class="evidence">
+        <div class="evidence-box reveal"><strong>SCREENSHOT 01</strong><h3>Application home page</h3><p>Replace this panel with a screenshot of your actual AI Study Assistant home screen.</p></div>
+        <div class="evidence-box reveal"><strong>SCREENSHOT 02</strong><h3>Example interaction</h3><p>Add a screenshot showing a real input and the application's response. Hide API keys and private information.</p></div>
+        <div class="evidence-box reveal"><strong>TESTING</strong><h3>Inputs and observations</h3><p>Record the test input, expected behaviour, actual result and any improvement made.</p></div>
+        <div class="evidence-box reveal"><strong>DOCUMENTATION</strong><h3>Development record</h3><p>Link your project report, setup notes or other documentation required by your faculty.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal"><div><div class="eyebrow">07 / STILL BECOMING</div><h2>Build. Learn.<br><span class="accent">Repeat.</span></h2></div><p>This project is one step in my learning journey. I’m looking forward to improving my skills, exploring new ideas and building more useful applications.</p></div>
+      <div class="contact">
+        <div class="contact-card reveal"><div class="eyebrow">A NOTE TO CLOSE</div><h3>Thanks for exploring my work.</h3><p>Created as part of my AI Engineering practical portfolio — Mini Project 2: AI Portfolio and Presentation (10-B).</p><p><strong>Bilal Vekariya</strong><br>AI Engineering · Karnavati University</p><a class="btn" href="mailto:bilalvek11@gmail.com">GET IN TOUCH ↗</a></div>
+        <div class="contact-card contact-links reveal"><a href="https://github.com/bilalvek11-prog/ai-study-assistant" target="_blank" rel="noreferrer">GITHUB REPOSITORY <span>↗</span></a><a href="https://bilalvek11-prog.github.io/ai-study-assistant/" target="_blank" rel="noreferrer">LIVE APPLICATION <span>↗</span></a><a href="mailto:bilalvek11@gmail.com">EMAIL <span>↗</span></a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div>© <span id="year"></span> BILAL VEKARIYA</div><div>AI ENGINEERING · PORTFOLIO 10-B</div><a href="#home">BACK TO TOP ↑</a></footer>
+<script>
+  const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+  menu.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
